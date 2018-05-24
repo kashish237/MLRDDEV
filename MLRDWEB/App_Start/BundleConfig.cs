@@ -9,7 +9,19 @@ namespace MLRDWEB
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/assets/js/jquery-3.2.1.min.js",
+                        "~/assets/js/popper.min.js",
+                        "~/assets/js/bootstrap.min.js",
+                        "~/assets/js/jquery.sticky.js",
+                        "~/assets/js/owl.carousel.min.js",
+                        "~/assets/js/jquery.shuffle.min.js",
+                        "~/assets/js/jquery.counterup.min.js",
+                        "~/assets/js/wow.min.js",
+                        "~/assets/js/jquery.meanmenu.min.js",
+                        "~/assets/js/jquery.magnific-popup.min.js",
+                        "~/assets/js/jquery.hoverdir.js",
+                        "~/assets/js/custom.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -23,8 +35,8 @@ namespace MLRDWEB
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/assets/css/style.css",
+                      "~/assets/css/responsive.css"));
         }
     }
 }
